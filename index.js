@@ -10,7 +10,8 @@ function heapdumpInterval(options) {
   var interval = options.interval || 6 * 60 * 60 * 1000; // 6 hour default
   var emitter = new EventEmitter();
 
-  fs.accessSync(heapDir, fs.W_OK);
+  var stat = fs.statSync(heapDir)
+  if (!stat.isDirectory()) throw new Error(heapDir + 'is not a directory');
 
 
   function dump() {
