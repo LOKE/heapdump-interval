@@ -1,7 +1,7 @@
 var heapdump = require('heapdump');
 var fs = require('fs');
 var resolve = require('path').resolve;
-var EventEmitter = require('events');
+var EventEmitter = require('events').EventEmitter;
 
 function heapdumpInterval(options) {
   var appname = options.appname;
