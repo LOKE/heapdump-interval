@@ -10,5 +10,17 @@
   "description": "heapdump interval",
   "dependencies": {
     "heapdump": "^0.3.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LOKE/heapdump-interval.git"
+  },
+  "keywords": [
+    "heapdump"
+  ],
+  "bugs": {
+    "url": "https://github.com/LOKE/heapdump-interval/issues"
+  },
+  "homepage": "https://github.com/LOKE/heapdump-interval#readme"
 }
